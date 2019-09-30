@@ -1,0 +1,93 @@
+artifact: php-fpm-common
+from: php:7.2-fpm-alpine
+git:
+  - add: /
+    to: /var/www/html
+    owner: www-data
+    group: www-data
+    stageDependencies:
+      install:
+        - composer.json
+      beforeSetup:
+        - "**/*"
+shell:
+  beforeInstall:
+  - apk --update --virtual build-deps add autoconf make gcc g++ libtool icu-dev curl-dev freetype-dev imagemagick-dev pcre-dev libjpeg-turbo-dev libpng-dev libxml2-dev && 
+    apk add git curl bash bash-completion icu imagemagick pcre freetype libintl libjpeg-turbo libpng libltdl libxml2 mysql-client && 
+    docker-php-ext-configure gd --with-gd --with-freetype-dir=/usr/include/ --with-png-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && 
+    docker-php-ext-configure bcmath && 
+    docker-php-ext-install soap zip curl bcmath exif gd iconv intl mbstring opcache pdo_mysql && 
+    pecl install imagick mongodb && 
+    apk del build-deps
+  - curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin && composer clear-cache
+  install:
+  - cd /var/www/html
+  - su -s /bin/sh -c "composer install" www-data
+  beforeSetup:
+  - cd /var/www/html
+  - su -s /bin/sh -c "php init --env=Production --overwrite=All" www-data
+---
+dimg: nginx-frontend
+from: nginx:1.14-alpine
+import:
+  - artifact: php-fpm-common
+    add: /var/www/html/frontend/web
+    to: /var/www/html/frontend/web
+    owner: nginx
+    group: nginx
+    after: install
+docker:
+  WORKDIR: /var/www/html
+---
+dimg: nginx-backend
+from: nginx:1.14-alpine
+import:
+  - artifact: php-fpm-common
+    add: /var/www/html/backend/web
+    to: /var/www/html/backend/web
+    owner: nginx
+    group: nginx
+    after: install
+docker:
+  WORKDIR: /var/www/html
+---
+dimg: php-fpm
+from: php:7.2-fpm-alpine
+import:
+  - artifact: php-fpm-common
+    add: /var/www/html
+    to: /var/www/html
+    owner: www-data
+    group: www-data
+    after: install
+git:
+  - add: /.helm/cmd/php-fpm/entrypoint.sh
+    to: /entrypoint.sh
+  - add: /.helm/cmd/php-fpm/migrate.sh
+    to: /migrate.sh
+    stageDependencies:
+      beforeSetup:
+        - "**/*"
+docker:
+  WORKDIR: /var/www/html
+  ENTRYPOINT:
+    - /entrypoint.sh
+  CMD:
+    - php-fpm
+shell:
+  beforeInstall:
+  - apk --update --virtual build-deps add autoconf make gcc g++ libtool icu-dev curl-dev freetype-dev imagemagick-dev pcre-dev libjpeg-turbo-dev libpng-dev libxml2-dev && 
+    apk add git curl bash bash-completion icu imagemagick pcre freetype libintl libjpeg-turbo libpng libltdl libxml2 mysql-client && 
+    docker-php-ext-configure gd --with-gd --with-freetype-dir=/usr/include/ --with-png-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && 
+    docker-php-ext-configure bcmath && 
+    docker-php-ext-install soap zip curl bcmath exif gd iconv intl mbstring opcache pdo_mysql && 
+    pecl install imagick mongodb && 
+    apk del build-deps
+  beforeSetup:
+  - echo "extension=imagick.so" > /usr/local/etc/php/conf.d/pecl-imagick.ini && echo "extension=mongodb.so" > /usr/local/etc/php/conf.d/pecl-mongodb.ini
+  - mkdir /php-conf
+  - ln -s /php-conf/php.ini /usr/local/etc/php/php.ini
+  - ln -s /php-conf/base.ini /usr/local/etc/php/base.ini
+  - chmod +x /entrypoint.sh
+  - chmod +x /migrate.sh
+---
