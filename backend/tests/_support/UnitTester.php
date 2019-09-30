@@ -1,5 +1,5 @@
 <?php
-namespace backend\tests;
+namespace common\tests;
 
 /**
  * Inherited Methods
