@@ -1,0 +1,44 @@
+@import url("fonts.css");
+
+body{
+    font-family: 'ProximaNova', sans-serif;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 400;
+    color: #242338;
+}
+
+.block-header {
+    background-color: #eceff7;
+    min-height: 82px;
+    padding-top: 20px;
+}
+
+footer {
+    font-family: 'ProximaNova', sans-serif;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 400;
+    color: #242338;
+}
+
+* {border-radius: 0!important;}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+}
+
+.buttons-row {padding-top: 10px; padding-bottom: 10px;}
+.buttons-row .btn {min-width: 240px;}
+
+header .navbar-default {background-color: transparent; border: none;}
+header .navbar-brand img  {margin-top: -12px;}
+
+h1 {font-size: 31.2px; font-weight: 600;}
+
+.finance {border-left: 5px solid #369; padding-left: 12px;}
+.finance h2 {color: #369; padding-top: 10px;}
+
+.finance2 {border-left: 5px solid #620; padding-left: 12px;}
+.finance2 h2 {color: #620; padding-top: 10px;}
