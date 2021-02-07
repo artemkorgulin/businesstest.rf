@@ -1,5 +1,5 @@
 <?php
-namespace common\modules\settings\common;
+namespace backend\modules\settings\common;
 use yii\base\Module;
 
 class SettingsModule extends Module

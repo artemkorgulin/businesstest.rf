@@ -1,0 +1,2370 @@
+2021-02-07 16:42:14 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class db does not exist in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php:508
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(508): ReflectionClass->__construct('db')
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(386): yii\di\Container->getDependencies('db')
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build('db', Array, Array)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('db')
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(183): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(179): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#13 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "db". in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php:510
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(386): yii\di\Container->getDependencies('db')
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build('db', Array, Array)
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('db')
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(183): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(179): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#12 {main}
+2021-02-07 16:42:14 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612705334.2475
+    'REQUEST_TIME' => 1612705334
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/sitronik/yii2-tree-menu/migrations'
+    ]
+    'argc' => 3
+]
+2021-02-07 16:42:14 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class db does not exist in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php:508
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(508): ReflectionClass->__construct('db')
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(386): yii\di\Container->getDependencies('db')
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build('db', Array, Array)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('db')
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(183): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(179): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#13 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "db". in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php:510
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(386): yii\di\Container->getDependencies('db')
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build('db', Array, Array)
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(176): yii\di\Container->get('db')
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\di\Instance.php(145): yii\di\Instance->get(NULL)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(183): yii\di\Instance::ensure(Object(yii\di\Instance), 'yii\\db\\Connecti...')
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(179): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#12 {main}
+2021-02-07 16:42:14 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612705334.2475
+    'REQUEST_TIME' => 1612705334
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/sitronik/yii2-tree-menu/migrations'
+    ]
+    'argc' => 3
+]
+2021-02-07 16:46:50 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:710
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(710): PDO->__construct('mysql:host=loca...', 'root', 'Taras1love', NULL)
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(631): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#20 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#21 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:642
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2021-02-07 16:46:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612705606.0051
+    'REQUEST_TIME' => 1612705606
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/sitronik/yii2-tree-menu/migrations'
+    ]
+    'argc' => 3
+]
+2021-02-07 16:46:50 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:710
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(710): PDO->__construct('mysql:host=loca...', 'root', 'Taras1love', NULL)
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(631): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#20 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#21 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:642
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2021-02-07 16:46:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612705606.0051
+    'REQUEST_TIME' => 1612705606
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/sitronik/yii2-tree-menu/migrations'
+    ]
+    'argc' => 3
+]
+2021-02-07 16:48:20 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:710
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(710): PDO->__construct('mysql:host=loca...', 'mysql', 'mysql', NULL)
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(631): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#20 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#21 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:642
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2021-02-07 16:48:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612705696.3358
+    'REQUEST_TIME' => 1612705696
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/sitronik/yii2-tree-menu/migrations'
+    ]
+    'argc' => 3
+]
+2021-02-07 16:48:20 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:710
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(710): PDO->__construct('mysql:host=loca...', 'mysql', 'mysql', NULL)
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(631): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#20 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#21 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+ in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php:642
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1030): yii\db\Connection->open()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Connection.php(1017): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(258): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1160): yii\db\Command->prepare(true)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(894): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(169): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#15 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('up', Array)
+#16 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('up', Array)
+#17 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/up', Array)
+#18 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/up', Array)
+#19 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2021-02-07 16:48:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PROMPT' => '$P$G'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612705696.3358
+    'REQUEST_TIME' => 1612705696
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/sitronik/yii2-tree-menu/migrations'
+    ]
+    'argc' => 3
+]
+2021-02-07 17:42:55 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:12
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:42:52 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612708972.7758
+    'REQUEST_TIME' => 1612708972
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:42:55 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:12
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:42:52 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612708972.7758
+    'REQUEST_TIME' => 1612708972
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:43:10 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:12
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:43:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612708988.1296
+    'REQUEST_TIME' => 1612708988
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:43:10 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:12
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:43:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612708988.1296
+    'REQUEST_TIME' => 1612708988
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:49:23 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:12
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:49:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709360.3707
+    'REQUEST_TIME' => 1612709360
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:49:23 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:12
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:49:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709360.3707
+    'REQUEST_TIME' => 1612709360
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:51:01 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:50:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709459.6589
+    'REQUEST_TIME' => 1612709459
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:51:01 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:50:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709459.6589
+    'REQUEST_TIME' => 1612709459
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:52:12 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:52:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709530.9366
+    'REQUEST_TIME' => 1612709530
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:52:12 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:52:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709530.9366
+    'REQUEST_TIME' => 1612709530
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:53:56 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:53:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709634.6
+    'REQUEST_TIME' => 1612709634
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:53:56 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:53:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709634.6
+    'REQUEST_TIME' => 1612709634
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:58:21 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:58:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709899.9967
+    'REQUEST_TIME' => 1612709899
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 17:58:21 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 17:58:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612709899.9967
+    'REQUEST_TIME' => 1612709899
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 18:00:37 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 18:00:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612710035.2154
+    'REQUEST_TIME' => 1612710035
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-07 18:00:37 [-][-][-][error][Error] Error: Class 'common\modules\settings\common\models\SettingsValues' not found in C:\OpenServer\domains\businesstest.rf\console\migrations\m171123_105453_add_default_settings.php:14
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(744): m171123_105453_add_default_settings->up()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(202): yii\console\controllers\BaseMigrateController->migrateUp('m171123_105453_...')
+#2 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#3 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#6 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#11 {main}
+2021-02-07 18:00:35 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612710035.2154
+    'REQUEST_TIME' => 1612710035
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-02-08 00:38:21 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'buisnesstest.tree_menu_json' in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php:1299
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1299): PDOStatement->execute()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1099): yii\db\Command->internalExecute('DROP TABLE `tre...')
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Migration.php(351): yii\db\Command->execute()
+#3 C:\OpenServer\domains\businesstest.rf\console\migrations\m170626_175738_tree_menu_json.php(62): yii\db\Migration->dropTable('tree_menu_json')
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(772): m170626_175738_tree_menu_json->down()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(266): yii\console\controllers\BaseMigrateController->migrateDown('m170626_175738_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('down', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('down', Array)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/down', Array)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/down', Array)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'buisnesstest.tree_menu_json'
+The SQL being executed was: DROP TABLE `tree_menu_json` in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1304): yii\db\Schema->convertException(Object(PDOException), 'DROP TABLE `tre...')
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1099): yii\db\Command->internalExecute('DROP TABLE `tre...')
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Migration.php(351): yii\db\Command->execute()
+#3 C:\OpenServer\domains\businesstest.rf\console\migrations\m170626_175738_tree_menu_json.php(62): yii\db\Migration->dropTable('tree_menu_json')
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(772): m170626_175738_tree_menu_json->down()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(266): yii\console\controllers\BaseMigrateController->migrateDown('m170626_175738_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('down', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('down', Array)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/down', Array)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/down', Array)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1051
+    [2] => Unknown table 'buisnesstest.tree_menu_json'
+)
+
+2021-02-08 00:38:13 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612733893.708
+    'REQUEST_TIME' => 1612733893
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate/down'
+    ]
+    'argc' => 2
+]
+2021-02-08 00:38:21 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'buisnesstest.tree_menu_json' in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php:1299
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1299): PDOStatement->execute()
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1099): yii\db\Command->internalExecute('DROP TABLE `tre...')
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Migration.php(351): yii\db\Command->execute()
+#3 C:\OpenServer\domains\businesstest.rf\console\migrations\m170626_175738_tree_menu_json.php(62): yii\db\Migration->dropTable('tree_menu_json')
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(772): m170626_175738_tree_menu_json->down()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(266): yii\console\controllers\BaseMigrateController->migrateDown('m170626_175738_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('down', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('down', Array)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/down', Array)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/down', Array)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'buisnesstest.tree_menu_json'
+The SQL being executed was: DROP TABLE `tree_menu_json` in C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1304): yii\db\Schema->convertException(Object(PDOException), 'DROP TABLE `tre...')
+#1 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Command.php(1099): yii\db\Command->internalExecute('DROP TABLE `tre...')
+#2 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\db\Migration.php(351): yii\db\Command->execute()
+#3 C:\OpenServer\domains\businesstest.rf\console\migrations\m170626_175738_tree_menu_json.php(62): yii\db\Migration->dropTable('tree_menu_json')
+#4 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(772): m170626_175738_tree_menu_json->down()
+#5 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(266): yii\console\controllers\BaseMigrateController->migrateDown('m170626_175738_...')
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#7 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('down', Array)
+#10 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('down', Array)
+#11 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/down', Array)
+#12 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/down', Array)
+#13 C:\OpenServer\domains\businesstest.rf\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 C:\OpenServer\domains\businesstest.rf\yii(27): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1051
+    [2] => Unknown table 'buisnesstest.tree_menu_json'
+)
+
+2021-02-08 00:38:13 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_261'
+    'COMPUTERNAME' => 'LAPTOP-618FGMRB'
+    'ERLANG_HOME' => 'C:\\Program Files\\erl10.7'
+    'OneDriveConsumer' => 'C:\\Users\\ttion\\OneDrive'
+    'PHP_COMMAND' => 'php.exe'
+    'PROMPT' => '$P$G'
+    'YII_PATH' => 'C:\\OpenServer\\domains\\businesstest.rf\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\ttion\\AppData\\Roaming\\JetBrains\\PhpStorm2020.3\\terminal\\history\\history-193'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'LOGONSERVER' => '\\\\LAPTOP-618FGMRB'
+    'TEMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'ANDROID_SDK_ROOT' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'HOMEPATH' => '\\Users\\ttion'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\OpenServer\\domains'
+    'ANDROID_HOME' => 'C:\\Program Files (x86)\\Android\\sdk'
+    'USERNAME' => 'ttion'
+    'ProgramFiles' => 'C:\\Program Files'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-618FGMRB'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\ttion\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\ttion\\AppData\\Roaming'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERDOMAIN' => 'LAPTOP-618FGMRB'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\Windows'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;'
+    'PROCESSOR_REVISION' => '8e0c'
+    'OneDrive' => 'C:\\Users\\ttion\\OneDrive'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'Path' => 'C:\\Program Files (x86)\\VMware\\VMware Player\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\EmEditor;C:\\Program Files\\PuTTY\\;C:\\Program Files\\010 Editor;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_261\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\gradle\\bin;C:\\Program Files (x86)\\Android\\sdk\\platform-tools;C:\\Program Files (x86)\\Android\\sdk\\tools\\bin;C:\\Program Files (x86)\\Android\\sdk\\tools;C:\\Program Files\\dotnet\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\OpenServer\\modules\\php\\PHP_7.2;;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\ttion\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2019.3.1\\bin;;C:\\Users\\ttion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ttion\\AppData\\Roaming\\npm;C:\\Users\\ttion\\.dotnet\\tools'
+    'GRADLE_HOME' => 'C:\\Program Files (x86)\\gradle'
+    'USERPROFILE' => 'C:\\Users\\ttion'
+    'SESSIONNAME' => 'Console'
+    'windir' => 'C:\\Windows'
+    'ProgramW6432' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'OS' => 'Windows_NT'
+    'TMP' => 'C:\\Users\\ttion\\AppData\\Local\\Temp'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'HOMEDRIVE' => 'C:'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_NAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'SCRIPT_FILENAME' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'PATH_TRANSLATED' => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1612733893.708
+    'REQUEST_TIME' => 1612733893
+    'argv' => [
+        0 => 'C:\\OpenServer\\domains\\businesstest.rf\\yii'
+        1 => 'migrate/down'
+    ]
+    'argc' => 2
+]

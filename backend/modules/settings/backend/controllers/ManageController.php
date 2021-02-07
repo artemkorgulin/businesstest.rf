@@ -1,10 +1,10 @@
 <?php
 
-namespace common\modules\settings\backend\controllers;
+namespace backend\modules\settings\backend\controllers;
 
 use Yii;
-use common\modules\settings\common\models\Settings;
-use common\modules\settings\common\models\SettingsSearch;
+use backend\modules\settings\common\models\Settings;
+use backend\modules\settings\common\models\SettingsSearch;
 use backend\controllers\DefaultBackendController;
 use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
@@ -18,9 +18,9 @@ class ManageController extends DefaultBackendController
 
     public function beforeAction($action)
     {
-        if (!Yii::$app->user->can('developer')) {
-            throw new ForbiddenHttpException();
-        }
+        //if (!Yii::$app->user->can('developer')) {
+        //    throw new ForbiddenHttpException();
+        //}
         return parent::beforeAction($action);
     }
 

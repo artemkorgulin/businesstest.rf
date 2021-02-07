@@ -26,6 +26,7 @@ use app\assets\AppAsset;
 <body>
 <?php $this->beginBody() ?>
 
+
 <div class="border header">
 
     <?php
@@ -75,11 +76,11 @@ use app\assets\AppAsset;
 <div class="border b_container clearfix">
     <div id="left-sidebar-menu" class="border menu hidden-xs">
         <ul>
-        <?= \yii\widgets\ListView::widget([
+        <? /*\yii\widgets\ListView::widget([
             'dataProvider' => $this->params['_backendMap'],
             'itemView' => '_menu_item',
             'summary' => false,
-        ]);
+        ]);*/
         ?>
         </ul>
     </div>
@@ -92,7 +93,7 @@ use app\assets\AppAsset;
                     <h1><?=Html::encode($this->title)?></h1>
                 </div>
                 <div class="panel-body main-panel-body">
-
+                    <? echo sitronik\treemenu\Tree::widget();    ?>
                     <?php if ($flash = Yii::$app->session->getFlash('global')): ?>
                     <div class="alert alert-<?=$flash['class']?>">
                         <?=$flash['message']?>

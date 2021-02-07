@@ -1,0 +1,41 @@
+body {
+    min-height: 100%;
+    background: #336699; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #336699, #007788);
+    background: -moz-linear-gradient(right, #336699, #007788);
+    background: -o-linear-gradient(right, #336699, #007788);
+    background: linear-gradient(to left, #336699, #007788);
+}
+
+.alert {border-radius: 0;}
+.alert-success {color: #fff; background-color: darkgreen; border: none;}
+
+.loginpage {padding: 8% 0 0; margin: auto; max-width: 360px;}
+.loginpage__inner {background: #FFFFFF; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); padding: 45px;}
+
+form .form-control {
+    font-family: "Roboto", sans-serif;
+    border-radius: 0;
+    background: #f2f2f2;
+    border: none;
+    width: 100%;
+    height: auto;
+    line-height: 3em;
+    outline: 0;
+}
+
+form .btn {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 4em;
+    line-height: 4em;
+}
+
+.loginpage__inner h1 {font-size: 1.32em; border-bottom: 1px solid silver; padding-bottom: .4em; margin-bottom: 1.2em; margin-top: .1em;}

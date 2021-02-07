@@ -11,7 +11,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40000 ALTER TABLE `zip` DISABLE KEYS */;
 INSERT INTO `user` (`id`, `email`, `auth_key`, `password_hash`, `password_reset_token`, `status`, `created_at`, `updated_at`, `token_proftest`, `is_proftest_active`, `token_fgtest`, `is_fgtest_active`, `token_btest`, `is_btest_active`)
-VALUES (NULL, 'backend-user@synergy.ru', '', '$2y$13$ys6ws3NB0tKZ/MIb2OHNROrVXSwmPfmujy4nxMmVx6n0xwpfIOxdK', '$2y$13$ys6ws3NB0tKZ/MIb2OHNROrVXSwmPfmujy4nxMmVx6n0xwpfIOxdK', '10', '1541721600', '1541721600', NULL, '0', NULL, '0', NULL, '0');
+VALUES (NULL, 'backend@synergy.ru', '', 'a2550eeab0724a691192ca13982e6ebd', 'a2550eeab0724a691192ca13982e6ebd', '10', '1541721600', '1541721600', NULL, '0', NULL, '0', NULL, '0');
 /*!40000 ALTER TABLE `zip` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

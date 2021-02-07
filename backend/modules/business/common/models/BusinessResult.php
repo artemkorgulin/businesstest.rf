@@ -4,7 +4,7 @@ namespace common\modules\business\common\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
-use common\models\User;
+use backend\models\User;
 
 /**
  * This is the model class for table "business_result".

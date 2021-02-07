@@ -5,7 +5,7 @@ use kartik\form\ActiveForm;
 
 
 /* @var $this yii\web\View */
-/* @var $model common\models\User */
+/* @var $model backend\models\User */
 
 $this->title = 'Создать аккаунт';
 $this->params['breadcrumbs'][] = ['label' => 'Учетные записи', 'url' => ['index']];

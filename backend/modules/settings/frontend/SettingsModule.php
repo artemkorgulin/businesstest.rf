@@ -1,6 +1,6 @@
 <?php
-namespace common\modules\settings\frontend;
-use common\modules\settings\common\models\Settings;
+namespace backend\modules\settings\frontend;
+use backend\modules\settings\common\models\Settings;
 use yii\base\Module;
 
 class SettingsModule extends Module

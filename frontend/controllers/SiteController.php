@@ -2,7 +2,8 @@
 
 namespace frontend\controllers;
 
-use common\models\User;
+use backend\models\TreeMenuJson;
+use backend\models\User;
 use common\models\UserProfile;
 use common\modules\business\common\components\result\BusinessResultComposer;
 use common\modules\business\common\models\BusinessResult;
@@ -81,6 +82,10 @@ class SiteController extends DefaultFrontendController
      */
     public function actionIndex()
     {
+        $model = new TreeMenuJson();
+        $all = $model->all();
+        var_dump($model); exit;
+
         if (Yii::$app->user->isGuest) {
             return $this->renderPartial('index');
         } else {

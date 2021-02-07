@@ -1,7 +1,7 @@
 <?php
 namespace common\modules\business\frontend\controllers;
 use common\models\BitrixLead;
-use common\models\User;
+use backend\models\User;
 use common\models\UserProfile;
 use common\modules\business\common\models\BusinessResult;
 use common\modules\organizations\common\models\Region;

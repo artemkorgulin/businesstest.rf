@@ -17,14 +17,20 @@ return [
         'business' => ['class' => '\common\modules\business\backend\BusinessTestingModule',],
         'org'  => ['class' => '\common\modules\organizations\backend\OrganizationsModule',],
         'settings' => ['class' => '\common\modules\settings\backend\SettingsModule',],
+        'allert' => ['class' => '\common\widgets\Alert',],
     ],
     'components' => [
+        'assetManager' => [
+            'basePath' => __DIR__ . '/../web/assets',
+        ],
         'request' => [
             'baseUrl' => '/',
             'csrfParam' => '_csrf-backend',
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => 'fdhgdfgdgdfgs56y45rghrthtr', // ВОТ СЮДА напишите какую-то строку
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'backend\models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
@@ -59,19 +65,14 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host='.getenv("MYSQL_HOST").';dbname='.getenv("MYSQL_DATABASE"),
-            'username' => getenv("MYSQL_USER"),
-            'password' => getenv("MYSQL_PASSWORD"),
+            'dsn' => 'mysql:host=localhost;dbname=buisnesstest',
+            'username' => "mysql",
+            'password' => "mysql",
             'charset' => 'utf8',
         ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
+        'urlManager'=>[
+            'scriptUrl'=>'/index.php',
         ],
-        */
     ],
     'params' => $params,
 ];

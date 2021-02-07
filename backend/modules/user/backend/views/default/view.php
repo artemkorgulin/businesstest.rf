@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Редактировать аккаунт', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
 
-        <?php if (\common\models\User::STATUS_ACTIVE == $model->status): ?>
+        <?php if (\backend\models\User::STATUS_ACTIVE == $model->status): ?>
 
         <?= Html::a('Заблокировать аккаунт', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',

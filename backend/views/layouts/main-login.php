@@ -4,7 +4,7 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use common\widgets\Alert;
+use backend\widgets\Alert;
 
 \backend\assets\ServiceAsset::register($this);
 ?>

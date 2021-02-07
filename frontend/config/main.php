@@ -10,11 +10,11 @@ return [
     'id' => 'app-frontend',
     'language' => 'ru',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'settings'],
+    'bootstrap' => ['log'],
 
     'modules' => [
-        'settings' => ['class' => '\common\modules\settings\frontend\SettingsModule', ],
-        'bt'       => ['class' => '\common\modules\business\frontend\BusinessTestingModule', ],
+        //'settings' => ['class' => 'frontend\modules\settings\frontend\SettingsModule', ],
+        'bt'       => ['class' => 'common\modules\business\frontend\BusinessTestingModule', ],
 
         'datecontrol' =>  [
             'class' => '\kartik\datecontrol\Module'
@@ -27,6 +27,8 @@ return [
         'request' => [
             'baseUrl' => '/',
             'csrfParam' => '_csrf-frontend',
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => 'fdhgdfgdgdfgs56y45rghrthtr', // ВОТ СЮДА напишите какую-то строку
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -51,19 +53,19 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host='.getenv("MYSQL_HOST").';dbname='.getenv("MYSQL_DATABASE"),
-            'username' => getenv("MYSQL_USER"),
-            'password' => getenv("MYSQL_PASSWORD"),
+            'dsn' => 'mysql:host=localhost;dbname=buisnesstest',
+            'username' => "mysql",
+            'password' => "mysql",
             'charset' => 'utf8',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
+            'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'api'],
             ],
-        ],
-        */
+        ]
     ],
     'params' => $params,
 ];

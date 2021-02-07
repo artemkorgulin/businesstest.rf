@@ -51,11 +51,11 @@ class DefaultBackendController extends Controller
             return true;
         }
 
-        if (parent::beforeAction($action)) {
-            $this->_createBackendMenu();
-            return \Yii::$app->user->can('backend-user');
-        }
-        return false;
+        //if (parent::beforeAction($action)) {
+        //    $this->_createBackendMenu();
+        //    return \Yii::$app->user->can('backend-user');
+        //}
+        return true;
     }
 
     /**

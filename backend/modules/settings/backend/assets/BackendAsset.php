@@ -1,5 +1,5 @@
 <?php
-namespace common\modules\settings\backend\assets;
+namespace backend\modules\settings\backend\assets;
 use yii\web\AssetBundle;
 
 class BackendAsset extends AssetBundle

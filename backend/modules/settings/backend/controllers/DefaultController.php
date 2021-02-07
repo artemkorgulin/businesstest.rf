@@ -1,7 +1,7 @@
 <?php
-namespace common\modules\settings\backend\controllers;
+namespace backend\modules\settings\backend\controllers;
 use backend\controllers\DefaultBackendController;
-use common\modules\settings\common\models\SettingsValues;
+use backend\modules\settings\common\models\SettingsValues;
 
 class DefaultController extends DefaultBackendController
 {

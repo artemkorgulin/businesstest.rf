@@ -3,7 +3,7 @@ namespace frontend\models;
 use common\modules\business\frontend\models\Unisender;
 use yii\base\Model;
 
-use common\models\User;
+use backend\models\User;
 use common\models\UserProfile;
 use common\models\BitrixLead;
 use common\models\UnisenderBackup;

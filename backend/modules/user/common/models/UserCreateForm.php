@@ -1,7 +1,7 @@
 <?php
 namespace common\modules\user\common\models;
 use yii\base\Model;
-use common\models\User;
+use backend\models\User;
 
 class UserCreateForm extends Model
 {
@@ -26,11 +26,11 @@ class UserCreateForm extends Model
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'E-mail уже используется.'],
+            ['email', 'unique', 'targetClass' => '\backend\models\User', 'message' => 'E-mail уже используется.'],
 
             ['phone', 'trim'],
             ['phone', 'required'],
-            ['phone', 'unique', 'targetClass' => '\common\models\User', 'message' => 'Номер телефона уже используется.'],
+            ['phone', 'unique', 'targetClass' => '\backend\models\User', 'message' => 'Номер телефона уже используется.'],
 
             ['password_repeat', 'required'],
             ['password_repeat', 'string', 'min' => 6],

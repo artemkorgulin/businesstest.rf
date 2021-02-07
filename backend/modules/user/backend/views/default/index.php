@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'email:email',
             ['attribute' => 'status', 'content' => function($model) {
-                return $model->status === \common\models\User::STATUS_ACTIVE ? 'Активен' : 'Заблокирован';
+                return $model->status === \backend\models\User::STATUS_ACTIVE ? 'Активен' : 'Заблокирован';
             }],
             ['class' => 'yii\grid\ActionColumn', 'template'=>'{view} {update}'],
         ],

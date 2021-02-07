@@ -1,6 +1,6 @@
 <?php
-namespace common\modules\settings\backend;
-use common\modules\settings\backend\assets\BackendAsset;
+namespace backend\modules\settings\backend;
+use backend\modules\settings\backend\assets\BackendAsset;
 
 class SettingsModule extends \common\modules\settings\common\SettingsModule
 {
