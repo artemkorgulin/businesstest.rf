@@ -82,10 +82,6 @@ class SiteController extends DefaultFrontendController
      */
     public function actionIndex()
     {
-        $model = new TreeMenuJson();
-        $all = $model->all();
-        var_dump($model); exit;
-
         if (Yii::$app->user->isGuest) {
             return $this->renderPartial('index');
         } else {
