@@ -80,7 +80,10 @@ class TreeMenuJson extends ActiveRecord
 
     public function remove($parent_id)
     {
-        return static::deleteAll(['parent_id' => $parent_id]);
+        static::deleteAll([
+            ['in', 'id', $parent_id]
+        ]);
+        return true;
     }
 
     public function edit($id,$parent_id,$name)

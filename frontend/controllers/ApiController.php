@@ -102,6 +102,41 @@ class ApiController extends DefaultFrontendController
     }
 
 
+    public  function RecursiveTree2Delete(&$rs, $parent)
+    {
+        if(!is_array($_SESSION["out"])) {
+            $_SESSION["out"] = array();
+        }
+        if (!isset($rs[$parent]))
+        {
+            return $out;
+        }
+        foreach ($rs[$parent] as $row)
+        {
+            $chidls = $this->RecursiveTree2Delete($rs, $row['id']);
+
+            if ($chidls)
+            {
+
+                if ($row['parent_id'] == 0)
+                {
+                    $row['toggle'] = false;
+                    $row['expanded'] = true;
+                    $row['children'] = $chidls;
+                    $row['text'] = '';
+                }
+                else
+                {
+                    $row['expanded'] = false;
+                    $row['children'] = $chidls;
+                }
+            }
+            $_SESSION["out"][] = $row['id'];
+        }
+        return $_SESSION["out"];
+    }
+
+
     /**
      * all items json
      *
@@ -150,11 +185,17 @@ class ApiController extends DefaultFrontendController
         Yii::$app->response->format = Response::FORMAT_JSON;
         $req = Yii::$app->request;
         $post = $req->post();
-        if (!isset($post['parent_id'])) {
+        if (!isset($post['id'])) {
             return ['status' => 'error', 'output' => 'No set parent_id to remove'];
         }
+
+        if ($post['id'] == 0)
+            throw new NotFoundHttpException(400, 'Главную категорию нельзя удалить');
+
         $model = new TreeMenuJson();
-        $value = $model->remove($post['parent_id']);
+        $all = $model->all();
+        $ids = $this->RecursiveTree2Delete($all, $post['id']);
+        $value = $model->remove($ids);
         $model->save();
         return ['status' => 'success', 'output' => $value];
     }
