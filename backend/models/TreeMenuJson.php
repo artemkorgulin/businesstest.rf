@@ -57,7 +57,12 @@ class TreeMenuJson extends ActiveRecord
      */
     public function all()
     {
-        return static::find([])->orderBy(['depth' => SORT_ASC])->all();
+        $items = static::find([])->orderBy(['depth' => SORT_ASC])->all();
+        foreach ($items as $item)
+        {
+            $all[$item->parent_id][] = array("id" => $item->id, "name"=> $item->name, "url"=> $item->url, "parent_id" => $item->parent_id);
+        }
+        return $all;
     }
 
     /**

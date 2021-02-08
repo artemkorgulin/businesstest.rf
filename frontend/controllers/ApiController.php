@@ -78,7 +78,7 @@ class ApiController extends DefaultFrontendController
         }
         foreach ($rs[$parent] as $row)
         {
-            $chidls = $this->RecursiveTree2($rs, $rs[$parent]['id']);
+            $chidls = $this->RecursiveTree2($rs, $row['id']);
 
             if ($chidls)
             {
@@ -114,20 +114,7 @@ class ApiController extends DefaultFrontendController
         $post = $req->post();
         $model = new TreeMenuJson();
         $all = $model->all();
-
-        $all = ArrayHelper::toArray($all, [
-            'backend\models\TreeMenuJson' => [
-                'id',
-                'name',
-                'url',
-                'parent',
-                'parent_id',
-                'depth',
-            ],
-        ]);
-
-        $value = $this->RecursiveTree2($all, 1);
-
+        $value = $this->RecursiveTree2($all, 0);
         return ['status' => 'success', 'output' => $value];
     }
 
