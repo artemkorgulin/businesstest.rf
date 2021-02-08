@@ -28,7 +28,10 @@ return [
             'baseUrl' => '/',
             'csrfParam' => '_csrf-frontend',
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'fdhgdfgdgdfgs56y45rghrthtr', // ВОТ СЮДА напишите какую-то строку
+            'cookieValidationKey' => 'fdhgdfgdgdfgs56y45rghrthtr',
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ]
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -58,14 +61,15 @@ return [
             'password' => "mysql",
             'charset' => 'utf8',
         ],
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'enableStrictParsing' => true,
-            'showScriptName' => false,
-            'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'api'],
-            ],
-        ]
+        'urlManager'=>array(
+            'showScriptName'=>false,
+            'rules'=>array(
+                '/'=>'site/index',
+                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>'
+            ),
+        )
     ],
     'params' => $params,
 ];

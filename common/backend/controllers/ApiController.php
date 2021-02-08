@@ -17,6 +17,7 @@ use yii\filters\AccessControl;
 use backend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\web\NotFoundHttpException;
 use kartik\mpdf\Pdf;
@@ -24,39 +25,30 @@ use yii\web\Response;
 use backend\models\TreeMenuJson;
 
 /**
- * Api controller
+ * Site controller
  */
 class ApiController extends DefaultFrontendController
 {
+    public $modelClass = 'backend\models\TreeMenuJson';
+
+    /**
+     * @inheritdoc
+     */
+    protected function verbs()
+    {
+        return [
+            'index' => ['GET', 'HEAD'],
+        ];
+    }
+
     /**
      * @inheritdoc
      */
     public function behaviors()
     {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
+        $behaviors = [];
+
+        return $behaviors;
     }
 
     /**
@@ -64,7 +56,14 @@ class ApiController extends DefaultFrontendController
      */
     public function actions()
     {
-        return [];
+        $actions = [
+            'index' => [
+                'class' => ApiController::class,
+                'modelClass' => $this->modelClass
+            ],
+        ];
+
+        return array_merge(parent::actions(), $actions);
     }
 
 
@@ -105,8 +104,27 @@ class ApiController extends DefaultFrontendController
      *
      * @return mixed
      */
+    public function actionView()
+    {
+        var_dump("actionView"); exit;
+        Yii::$app->response->format = Response::FORMAT_JSON;
+        $req = Yii::$app->request;
+        $post = $req->post();
+        $model = new TreeMenuJson();
+        $all = $model->all();
+        $value = $this->RecursiveTree2($all, 0);
+        return ['status' => 'success', 'output' => $value];
+    }
+
+
+    /**
+     * all items json
+     *
+     * @return mixed
+     */
     public function actionIndex()
     {
+        var_dump("actionIndex"); exit;
         Yii::$app->response->format = Response::FORMAT_JSON;
         $req = Yii::$app->request;
         $post = $req->post();
@@ -123,6 +141,7 @@ class ApiController extends DefaultFrontendController
      */
     public function actionAdd()
     {
+        var_dump("actionAdd"); exit;
         Yii::$app->response->format = Response::FORMAT_JSON;
         $req = Yii::$app->request;
         $post = $req->post();
