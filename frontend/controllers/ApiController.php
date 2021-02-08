@@ -22,6 +22,7 @@ use yii\web\NotFoundHttpException;
 use kartik\mpdf\Pdf;
 use yii\web\Response;
 use backend\models\TreeMenuJson;
+use yii\helpers\ArrayHelper;
 
 /**
  * Api controller
@@ -77,7 +78,8 @@ class ApiController extends DefaultFrontendController
         }
         foreach ($rs[$parent] as $row)
         {
-            $chidls = $this->RecursiveTree2($rs, $row['id']);
+            $chidls = $this->RecursiveTree2($rs, $rs[$parent]['id']);
+
             if ($chidls)
             {
 
@@ -112,7 +114,20 @@ class ApiController extends DefaultFrontendController
         $post = $req->post();
         $model = new TreeMenuJson();
         $all = $model->all();
-        $value = $this->RecursiveTree2($all, 0);
+
+        $all = ArrayHelper::toArray($all, [
+            'backend\models\TreeMenuJson' => [
+                'id',
+                'name',
+                'url',
+                'parent',
+                'parent_id',
+                'depth',
+            ],
+        ]);
+
+        $value = $this->RecursiveTree2($all, 1);
+
         return ['status' => 'success', 'output' => $value];
     }
 

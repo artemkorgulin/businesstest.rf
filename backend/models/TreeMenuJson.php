@@ -17,7 +17,7 @@ use yii\web\IdentityInterface;
  * @property string $parent_id
  *
  */
-class TreeMenuJson extends ActiveRecord implements IdentityInterface
+class TreeMenuJson extends ActiveRecord
 {
 
     /**
