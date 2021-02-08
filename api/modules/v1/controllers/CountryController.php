@@ -18,7 +18,6 @@ class CountryController extends ActiveController
 
     public function actions()
     {
-        var_dump("asdasd"); exit;
         $actions = parent::actions();
         $actions['index']['prepareDataProvider'] = function ($action) {
             return new ActiveDataProvider([

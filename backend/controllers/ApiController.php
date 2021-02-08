@@ -17,38 +17,47 @@ use yii\filters\AccessControl;
 use backend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\web\NotFoundHttpException;
 use kartik\mpdf\Pdf;
 use yii\web\Response;
 use backend\models\TreeMenuJson;
+use yii\helpers\ArrayHelper;
 
 /**
- * Site controller
+ * Api controller
  */
 class ApiController extends DefaultFrontendController
 {
-    public $modelClass = 'backend\models\TreeMenuJson';
-
-    /**
-     * @inheritdoc
-     */
-    protected function verbs()
-    {
-        return [
-            'index' => ['GET', 'HEAD'],
-        ];
-    }
-
     /**
      * @inheritdoc
      */
     public function behaviors()
     {
-        $behaviors = [];
-
-        return $behaviors;
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['logout', 'signup'],
+                'rules' => [
+                    [
+                        'actions' => ['signup'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['logout'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'logout' => ['post'],
+                ],
+            ],
+        ];
     }
 
     /**
@@ -56,14 +65,7 @@ class ApiController extends DefaultFrontendController
      */
     public function actions()
     {
-        $actions = [
-            'index' => [
-                'class' => ApiController::class,
-                'modelClass' => $this->modelClass
-            ],
-        ];
-
-        return array_merge(parent::actions(), $actions);
+        return [];
     }
 
 
@@ -77,6 +79,7 @@ class ApiController extends DefaultFrontendController
         foreach ($rs[$parent] as $row)
         {
             $chidls = $this->RecursiveTree2($rs, $row['id']);
+
             if ($chidls)
             {
 
@@ -99,21 +102,38 @@ class ApiController extends DefaultFrontendController
     }
 
 
-    /**
-     * all items json
-     *
-     * @return mixed
-     */
-    public function actionView()
+    public  function RecursiveTree2Delete(&$rs, $parent)
     {
-        var_dump("actionView"); exit;
-        Yii::$app->response->format = Response::FORMAT_JSON;
-        $req = Yii::$app->request;
-        $post = $req->post();
-        $model = new TreeMenuJson();
-        $all = $model->all();
-        $value = $this->RecursiveTree2($all, 0);
-        return ['status' => 'success', 'output' => $value];
+        if(!is_array($_SESSION["out"])) {
+            $_SESSION["out"] = array();
+        }
+        if (!isset($rs[$parent]))
+        {
+            return $out;
+        }
+        foreach ($rs[$parent] as $row)
+        {
+            $chidls = $this->RecursiveTree2Delete($rs, $row['id']);
+
+            if ($chidls)
+            {
+
+                if ($row['parent_id'] == 0)
+                {
+                    $row['toggle'] = false;
+                    $row['expanded'] = true;
+                    $row['children'] = $chidls;
+                    $row['text'] = '';
+                }
+                else
+                {
+                    $row['expanded'] = false;
+                    $row['children'] = $chidls;
+                }
+            }
+            $_SESSION["out"][] = $row['id'];
+        }
+        return $_SESSION["out"];
     }
 
 
@@ -124,7 +144,6 @@ class ApiController extends DefaultFrontendController
      */
     public function actionIndex()
     {
-        var_dump("actionIndex"); exit;
         Yii::$app->response->format = Response::FORMAT_JSON;
         $req = Yii::$app->request;
         $post = $req->post();
@@ -141,7 +160,6 @@ class ApiController extends DefaultFrontendController
      */
     public function actionAdd()
     {
-        var_dump("actionAdd"); exit;
         Yii::$app->response->format = Response::FORMAT_JSON;
         $req = Yii::$app->request;
         $post = $req->post();
@@ -167,11 +185,17 @@ class ApiController extends DefaultFrontendController
         Yii::$app->response->format = Response::FORMAT_JSON;
         $req = Yii::$app->request;
         $post = $req->post();
-        if (!isset($post['parent_id'])) {
+        if (!isset($post['id'])) {
             return ['status' => 'error', 'output' => 'No set parent_id to remove'];
         }
+
+        if ($post['id'] == 0)
+            throw new NotFoundHttpException(400, 'Главную категорию нельзя удалить');
+
         $model = new TreeMenuJson();
-        $value = $model->remove($post['parent_id']);
+        $all = $model->all();
+        $ids = $this->RecursiveTree2Delete($all, $post['id']);
+        $value = $model->remove($ids);
         $model->save();
         return ['status' => 'success', 'output' => $value];
     }
